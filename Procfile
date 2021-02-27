@@ -1,0 +1,1 @@
+web: npm run tsbuild && npm run start
