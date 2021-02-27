@@ -34,10 +34,6 @@ app.use(router.routes())
 
 console.log(process.env.NODE_ENV);
 
-if (process.env.NODE_ENV === 'production' ){
-    https.createServer(app.callback()).listen(process.env.PORT||3000);
-}else{
-    http.createServer(app.callback()).listen(process.env.PORT||3000);
-}
+app.listen(process.env.PORT||3000)
 
 
